@@ -34,6 +34,10 @@
 		73D0969E24E29B7300C0CBEA /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D0969D24E29B7300C0CBEA /* AuthServiceProtocol.swift */; };
 		73D096A124E29B9600C0CBEA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D096A024E29B9600C0CBEA /* User.swift */; };
 		73D096A324E29C2700C0CBEA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D096A224E29C2700C0CBEA /* AuthService.swift */; };
+		73D096A924E2AC8200C0CBEA /* AuthFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D096A824E2AC8200C0CBEA /* AuthFormView.swift */; };
+		73D096AB24E2AE5A00C0CBEA /* AuthFormViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D096AA24E2AE5A00C0CBEA /* AuthFormViewDelegate.swift */; };
+		73D096AE24E2C2F900C0CBEA /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D096AD24E2C2F900C0CBEA /* Identifiers.swift */; };
+		73D096B024E2C3DF00C0CBEA /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D096AF24E2C3DF00C0CBEA /* SignupViewController.swift */; };
 		86A398AB869511D330113DE2 /* Pods_ShitpostTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C2C4B906EEB41FFF3404A1 /* Pods_ShitpostTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +86,10 @@
 		73D0969D24E29B7300C0CBEA /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
 		73D096A024E29B9600C0CBEA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		73D096A224E29C2700C0CBEA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		73D096A824E2AC8200C0CBEA /* AuthFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFormView.swift; sourceTree = "<group>"; };
+		73D096AA24E2AE5A00C0CBEA /* AuthFormViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFormViewDelegate.swift; sourceTree = "<group>"; };
+		73D096AD24E2C2F900C0CBEA /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		73D096AF24E2C3DF00C0CBEA /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		AC8C46EBBC9F4F48E4B3FA0A /* Pods-ShitpostTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShitpostTests.debug.xcconfig"; path = "Target Support Files/Pods-ShitpostTests/Pods-ShitpostTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF809E77A31402EF207694E8 /* Pods-Shitpost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shitpost.release.xcconfig"; path = "Target Support Files/Pods-Shitpost/Pods-Shitpost.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +182,7 @@
 		7309AED724E14FE800E2BF3A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				73D096A724E2AC7200C0CBEA /* Auth */,
 				7309AED824E14FF000E2BF3A /* Protocols */,
 			);
 			path = Views;
@@ -190,6 +199,7 @@
 		73B572B424E1310C004A69D3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				73D096AC24E2C2E100C0CBEA /* Identifiers */,
 				73D0969724E294F300C0CBEA /* Font */,
 				73CC2B5424E1493A005009F0 /* InputStyle */,
 				73B572BA24E13D9F004A69D3 /* Image */,
@@ -319,6 +329,9 @@
 		73D0969A24E29B4400C0CBEA /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				73D096A624E2AC3C00C0CBEA /* Presenter */,
+				73D096A524E2AC3700C0CBEA /* Interactor */,
+				73D096A424E2AC3100C0CBEA /* View */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -346,6 +359,45 @@
 				73D096A024E29B9600C0CBEA /* User.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		73D096A424E2AC3100C0CBEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				73D096AF24E2C3DF00C0CBEA /* SignupViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73D096A524E2AC3700C0CBEA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		73D096A624E2AC3C00C0CBEA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		73D096A724E2AC7200C0CBEA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				73D096A824E2AC8200C0CBEA /* AuthFormView.swift */,
+				73D096AA24E2AE5A00C0CBEA /* AuthFormViewDelegate.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		73D096AC24E2C2E100C0CBEA /* Identifiers */ = {
+			isa = PBXGroup;
+			children = (
+				73D096AD24E2C2F900C0CBEA /* Identifiers.swift */,
+			);
+			path = Identifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,15 +579,19 @@
 				73D0969624E2912400C0CBEA /* AuthAssembly.swift in Sources */,
 				7309AEDF24E16D8300E2BF3A /* AuthInteractorInput.swift in Sources */,
 				73D096A124E29B9600C0CBEA /* User.swift in Sources */,
+				73D096AE24E2C2F900C0CBEA /* Identifiers.swift in Sources */,
 				7309AEE324E16DD500E2BF3A /* AuthInteractor.swift in Sources */,
 				7301A61324E11947002E9D64 /* AppDelegate.swift in Sources */,
 				73B572BC24E13DAA004A69D3 /* Images.swift in Sources */,
 				7309AEE924E1701500E2BF3A /* UserViewModel.swift in Sources */,
+				73D096A924E2AC8200C0CBEA /* AuthFormView.swift in Sources */,
 				73B572C724E14321004A69D3 /* UIViewController+Extension.swift in Sources */,
+				73D096AB24E2AE5A00C0CBEA /* AuthFormViewDelegate.swift in Sources */,
 				7309AEDD24E16D1C00E2BF3A /* AuthViewInput.swift in Sources */,
 				7309AEE524E16F9B00E2BF3A /* AuthPresenterInput.swift in Sources */,
 				73B572B924E131C2004A69D3 /* Texts.swift in Sources */,
 				7301A61524E11947002E9D64 /* SceneDelegate.swift in Sources */,
+				73D096B024E2C3DF00C0CBEA /* SignupViewController.swift in Sources */,
 				73D0969924E294FD00C0CBEA /* Fonts.swift in Sources */,
 				7309AEE724E1700200E2BF3A /* LoginResponse.swift in Sources */,
 			);
