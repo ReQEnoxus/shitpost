@@ -8,14 +8,9 @@
 
 import Foundation
 
-enum Credential {
-    case email
-    case password
-}
 
 struct LoginResponse {
-    let user: UserViewModel?
     let success: Bool
     let error: String?
-    let malformedCredential: Credential?
+    let malformedFields: [String: String]?
 }

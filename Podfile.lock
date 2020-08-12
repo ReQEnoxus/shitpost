@@ -83,6 +83,7 @@ PODS:
   - PromisesObjC (1.2.9)
   - SnapKit (5.0.1)
   - SwipeMenuViewController (4.1.0)
+  - Validator (3.2.1)
 
 DEPENDENCIES:
   - AnimatedTextInput (~> 0.5)
@@ -92,6 +93,7 @@ DEPENDENCIES:
   - FirebaseUI/Database (~> 8.0)
   - SnapKit (~> 5.0)
   - SwipeMenuViewController
+  - Validator
 
 SPEC REPOS:
   trunk:
@@ -113,6 +115,7 @@ SPEC REPOS:
     - PromisesObjC
     - SnapKit
     - SwipeMenuViewController
+    - Validator
 
 SPEC CHECKSUMS:
   AnimatedTextInput: aadbdfa5a538a03cc9fbea700b43d2bb21a5d132
@@ -133,7 +136,8 @@ SPEC CHECKSUMS:
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwipeMenuViewController: 94fac81cc192d9f08f218fe4c0c853569b735e1f
+  Validator: 80a6f567220c962dfd2d9928ae98a8c1d164f6f4
 
-PODFILE CHECKSUM: f49f0c13c8ea37ab0038efc73b08a4ef0e8e0257
+PODFILE CHECKSUM: 7e7212acca0097d71b9750ac417553ea9016c86c
 
 COCOAPODS: 1.8.4

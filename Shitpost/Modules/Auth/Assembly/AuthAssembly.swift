@@ -15,10 +15,12 @@ class AuthAssembly {
         let interactor = AuthInteractor()
         let presenter = AuthPresenter()
         let authService = AuthService()
+        let validationService = ValidationService()
         
         view.interactor = interactor
         interactor.presenter = presenter
         interactor.authService = authService
+        interactor.validationService = validationService
         presenter.view = view
         
         return view

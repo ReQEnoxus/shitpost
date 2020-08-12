@@ -14,11 +14,17 @@ internal enum Text {
         static let signUpButtonTitle = "Create Account"
         static let emailTextFieldPlaceholder = "Enter email"
         static let passwordTextFieldPlaceholder = "Enter password"
-        
-        internal enum Error {
-            static let emailCannotBeEmpty = "Email cannot be empty"
-            static let passwordCannotBeEmpty = "Password cannot be empty"
-            static let incorrectCredentials = "Incorrect email or password"
-        }
+    }
+    internal enum SignUp {
+        static let signupButtonTitle = "Sign Up"
+        static let emailTextFieldPlaceholder = "Enter email"
+        static let passwordTextFieldPlaceholder = "Enter password"
+    }
+    internal enum Validation {
+        static let emailIsBadlyFormatted = "Email is badly formatted"
+        static let passwordIsTooShort = "Password should be 6 to 20 symbols"
+        static let emailCannotBeEmpty = "Email cannot be empty"
+        static let passwordCannotBeEmpty = "Password cannot be empty"
+        static let incorrectCredentials = "Incorrect email or password"
     }
 }

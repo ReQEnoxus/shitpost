@@ -80,7 +80,6 @@ class AuthFormView: UIView {
         
         let label = UILabel()
         label.textColor = .systemRed
-        label.text = Text.Auth.Error.incorrectCredentials
         label.textAlignment = .center
         label.font = Font.small
         label.numberOfLines = .zero

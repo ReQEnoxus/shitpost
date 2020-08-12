@@ -14,6 +14,7 @@ target 'Shitpost' do
   pod 'FirebaseUI/Database', '~> 8.0'
   pod 'SwipeMenuViewController'
   pod 'AnimatedTextInput', '~> 0.5'
+  pod 'Validator'
 
   target 'ShitpostTests' do
     inherit! :search_paths

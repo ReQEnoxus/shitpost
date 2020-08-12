@@ -13,22 +13,17 @@ class AuthPresenter: AuthPresenterInput {
     weak var view: AuthViewInput!
     
     func loginFinished(with response: LoginResponse) {
-        if response.success, let user = response.user {
-            print(user)
+        if response.success {
+            print("ok")
         }
-        else {
-            guard let error = response.error, let malformedCredential = response.malformedCredential else {
-                if let error = response.error {
-                    view.showInvalidCredentialsError(error)
-                }
-                return
-            }
-            switch malformedCredential {
-            case .email:
-                view.showEmailError(error)
-            case .password:
-                view.showPasswordError(error)
+        else if let serverError = response.error {
+            view.showInvalidCredentialsError(serverError)
+        }
+        else if let malformedFields = response.malformedFields {
+            for (field, error) in malformedFields {
+                view.showMalformedFieldError(field: field, error: error)
             }
         }
+            
     }
 }

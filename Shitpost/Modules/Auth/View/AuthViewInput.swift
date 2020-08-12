@@ -10,9 +10,7 @@ import Foundation
 
 protocol AuthViewInput: AnyObject {
     
-    func showEmailError(_ error: String)
-    
-    func showPasswordError(_ error: String)
+    func showMalformedFieldError(field: String, error: String)
     
     func showInvalidCredentialsError(_ error: String)
 }

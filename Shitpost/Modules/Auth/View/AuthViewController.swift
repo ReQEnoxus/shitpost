@@ -28,8 +28,8 @@ class AuthViewController: UIViewController {
                                            submitButtonTitle: Text.Auth.loginButtonTitle,
                                            secondaryButtonTitle: Text.Auth.signUpButtonTitle,
                                            inputs: [
-                                            InputViewConfiguration(placeholder: Text.Auth.emailTextFieldPlaceholder, name: Identifier.Form.Auth.email, type: .email),
-                                            InputViewConfiguration(placeholder: Text.Auth.passwordTextFieldPlaceholder, name: Identifier.Form.Auth.password, type: .password(toggleable: true))
+                                            InputViewConfiguration(placeholder: Text.Auth.emailTextFieldPlaceholder, name: Identifier.Form.email, type: .email),
+                                            InputViewConfiguration(placeholder: Text.Auth.passwordTextFieldPlaceholder, name: Identifier.Form.password, type: .password(toggleable: true))
         ])
         let formView = AuthFormView(configuration: config)
         formView.delegate = self
@@ -83,23 +83,19 @@ class AuthViewController: UIViewController {
 
 extension AuthViewController: AuthFormViewDelegate {
     func didTapPrimaryButton(fields: [String : String?]) {
-        let email = fields[Identifier.Form.Auth.email]!
-        let password = fields[Identifier.Form.Auth.password]!
+        let email = fields[Identifier.Form.email]!
+        let password = fields[Identifier.Form.password]!
         interactor.login(with: LoginRequest(email: email, password: password))
     }
     
     func didTapSecondaryButton(fields: [String : String?]) {
-        print("secondary")
     }
 }
 
 extension AuthViewController: AuthViewInput {
-    func showEmailError(_ error: String) {
-        mainView.fieldByName(Identifier.Form.Auth.email)?.show(error: error)
-    }
     
-    func showPasswordError(_ error: String) {
-        mainView.fieldByName(Identifier.Form.Auth.password)?.show(error: error)
+    func showMalformedFieldError(field: String, error: String) {
+        mainView.fieldByName(field)?.show(error: error)
     }
     
     func showInvalidCredentialsError(_ error: String) {
