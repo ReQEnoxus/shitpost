@@ -12,12 +12,15 @@ import UIKit
 class AuthAssembly {
     class func configure() -> UIViewController {
         let view = AuthViewController()
+        let router = AuthRouter()
         let interactor = AuthInteractor()
         let presenter = AuthPresenter()
         let authService = AuthService()
         let validationService = ValidationService()
         
         view.interactor = interactor
+        view.router = router
+        router.base = view
         interactor.presenter = presenter
         interactor.authService = authService
         interactor.validationService = validationService

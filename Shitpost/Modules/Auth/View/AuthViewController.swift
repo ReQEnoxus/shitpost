@@ -17,6 +17,7 @@ class AuthViewController: UIViewController {
     }
     
     var interactor: AuthInteractorInput!
+    var router: AuthRouterInput!
     
     var mainView: AuthFormView!
     
@@ -69,16 +70,6 @@ class AuthViewController: UIViewController {
             make.leading.trailing.bottom.equalToSuperview()
         }
     }
-    
-    //MARK: - Target-Action
-    @objc func loginButtonTapped() {
-        mainView.toggleErrorLabel(false)
-        
-    }
-    
-    @objc func signUpButtonTapped() {
-        print("signUpButtonTapped")
-    }
 }
 
 extension AuthViewController: AuthFormViewDelegate {
@@ -89,6 +80,7 @@ extension AuthViewController: AuthFormViewDelegate {
     }
     
     func didTapSecondaryButton(fields: [String : String?]) {
+        router.presentSignUpController()
     }
 }
 
@@ -101,6 +93,10 @@ extension AuthViewController: AuthViewInput {
     func showInvalidCredentialsError(_ error: String) {
         mainView.errorLabel.text = error
         mainView.toggleErrorLabel(true)
+    }
+    
+    func loginFinishedWithSuccess() {
+        router.pushMainModule()
     }
 }
 

@@ -13,4 +13,6 @@ protocol AuthViewInput: AnyObject {
     func showMalformedFieldError(field: String, error: String)
     
     func showInvalidCredentialsError(_ error: String)
+    
+    func loginFinishedWithSuccess()
 }
