@@ -12,4 +12,7 @@ internal enum Image {
     internal enum Auth {
         static let penguin = "penguin"
     }
+    internal enum Post {
+        static let avatar = "avatar-placeholder"
+    }
 }

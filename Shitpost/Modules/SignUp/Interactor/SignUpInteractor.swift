@@ -23,6 +23,7 @@ class SignUpInteractor: SignUpInteractorInput {
                 case .failure(let error):
                     self?.presenter.signUpFinished(with: SignUpResponse(success: false, error: error.localizedDescription, malformedFields: nil))
                 case .success(_):
+                    UserDefaults.standard.set(true, forKey: Constants.UserDefaults.Keys.isAuthenticated)
                     self?.presenter.signUpFinished(with: SignUpResponse(success: true, error: nil, malformedFields: nil))
                 }
             }

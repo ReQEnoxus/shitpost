@@ -23,6 +23,14 @@
 		7309AEE724E1700200E2BF3A /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7309AEE624E1700200E2BF3A /* LoginResponse.swift */; };
 		7309AEE924E1701500E2BF3A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7309AEE824E1701500E2BF3A /* UserViewModel.swift */; };
 		7309AEEB24E1709400E2BF3A /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7309AEEA24E1709400E2BF3A /* AuthPresenter.swift */; };
+		7327262024E6A0D100AB945E /* PostsPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7327261F24E6A0D100AB945E /* PostsPresenterInput.swift */; };
+		7327262224E6A10400AB945E /* PostsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7327262124E6A10400AB945E /* PostsInteractor.swift */; };
+		7327262524E6A36A00AB945E /* UserServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7327262424E6A36A00AB945E /* UserServiceProtocol.swift */; };
+		7327262724E6A38B00AB945E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7327262624E6A38B00AB945E /* UserService.swift */; };
+		7327262924E6A55600AB945E /* PostsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7327262824E6A55600AB945E /* PostsPresenter.swift */; };
+		7327262C24E6A70700AB945E /* PostsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7327262B24E6A70700AB945E /* PostsAssembly.swift */; };
+		7327262F24E6AC3500AB945E /* SignUpRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7327262E24E6AC3500AB945E /* SignUpRouterInput.swift */; };
+		7327263124E6AD0B00AB945E /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7327263024E6AD0B00AB945E /* SignUpRouter.swift */; };
 		73B572B624E13159004A69D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73B572B524E13159004A69D3 /* Localizable.strings */; };
 		73B572B924E131C2004A69D3 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B572B824E131C2004A69D3 /* Texts.swift */; };
 		73B572BC24E13DAA004A69D3 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B572BB24E13DAA004A69D3 /* Images.swift */; };
@@ -53,6 +61,25 @@
 		73D6B3EF24E40AAF001D8438 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B3EE24E40AAF001D8438 /* Router.swift */; };
 		73D6B3F124E40B79001D8438 /* AuthRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B3F024E40B79001D8438 /* AuthRouterInput.swift */; };
 		73D6B3F324E40BA9001D8438 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B3F224E40BA9001D8438 /* AuthRouter.swift */; };
+		73D6B3F724E40FBA001D8438 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B3F624E40FBA001D8438 /* MainViewController.swift */; };
+		73D6B3FF24E5277E001D8438 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B3FE24E5277E001D8438 /* PostsViewController.swift */; };
+		73D6B40524E528AC001D8438 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B40424E528AC001D8438 /* Constants.swift */; };
+		73D6B40824E52F13001D8438 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B40724E52F13001D8438 /* PostViewModel.swift */; };
+		73D6B40B24E53183001D8438 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B40A24E53183001D8438 /* PostCell.swift */; };
+		73D6B40E24E679F9001D8438 /* MainRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B40D24E679F9001D8438 /* MainRouterInput.swift */; };
+		73D6B41024E67A1E001D8438 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B40F24E67A1E001D8438 /* MainRouter.swift */; };
+		73D6B41324E67A6C001D8438 /* MainInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B41224E67A6C001D8438 /* MainInteractorInput.swift */; };
+		73D6B41524E67A84001D8438 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B41424E67A84001D8438 /* MainInteractor.swift */; };
+		73D6B41824E67ADD001D8438 /* MainPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B41724E67ADD001D8438 /* MainPresenterInput.swift */; };
+		73D6B41A24E67B15001D8438 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B41924E67B15001D8438 /* MainPresenter.swift */; };
+		73D6B41C24E67B37001D8438 /* MainViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B41B24E67B37001D8438 /* MainViewInput.swift */; };
+		73D6B41F24E67C1B001D8438 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B41E24E67C1B001D8438 /* MainAssembly.swift */; };
+		73D6B42224E685D9001D8438 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B42124E685D9001D8438 /* Post.swift */; };
+		73D6B42424E6860B001D8438 /* PostServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B42324E6860B001D8438 /* PostServiceProtocol.swift */; };
+		73D6B42624E68672001D8438 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B42524E68672001D8438 /* PostService.swift */; };
+		73D6B42824E69DCA001D8438 /* PostsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B42724E69DCA001D8438 /* PostsViewInput.swift */; };
+		73D6B42A24E69E40001D8438 /* PostsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B42924E69E40001D8438 /* PostsInteractorInput.swift */; };
+		73D6B42C24E69E4F001D8438 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6B42B24E69E4F001D8438 /* PostRequest.swift */; };
 		86A398AB869511D330113DE2 /* Pods_ShitpostTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C2C4B906EEB41FFF3404A1 /* Pods_ShitpostTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +117,14 @@
 		7309AEE624E1700200E2BF3A /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		7309AEE824E1701500E2BF3A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		7309AEEA24E1709400E2BF3A /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		7327261F24E6A0D100AB945E /* PostsPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPresenterInput.swift; sourceTree = "<group>"; };
+		7327262124E6A10400AB945E /* PostsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsInteractor.swift; sourceTree = "<group>"; };
+		7327262424E6A36A00AB945E /* UserServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceProtocol.swift; sourceTree = "<group>"; };
+		7327262624E6A38B00AB945E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		7327262824E6A55600AB945E /* PostsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPresenter.swift; sourceTree = "<group>"; };
+		7327262B24E6A70700AB945E /* PostsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsAssembly.swift; sourceTree = "<group>"; };
+		7327262E24E6AC3500AB945E /* SignUpRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouterInput.swift; sourceTree = "<group>"; };
+		7327263024E6AD0B00AB945E /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
 		73B572B524E13159004A69D3 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		73B572B824E131C2004A69D3 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
 		73B572BB24E13DAA004A69D3 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -120,6 +155,25 @@
 		73D6B3EE24E40AAF001D8438 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		73D6B3F024E40B79001D8438 /* AuthRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouterInput.swift; sourceTree = "<group>"; };
 		73D6B3F224E40BA9001D8438 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		73D6B3F624E40FBA001D8438 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		73D6B3FE24E5277E001D8438 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		73D6B40424E528AC001D8438 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		73D6B40724E52F13001D8438 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		73D6B40A24E53183001D8438 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		73D6B40D24E679F9001D8438 /* MainRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouterInput.swift; sourceTree = "<group>"; };
+		73D6B40F24E67A1E001D8438 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		73D6B41224E67A6C001D8438 /* MainInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorInput.swift; sourceTree = "<group>"; };
+		73D6B41424E67A84001D8438 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		73D6B41724E67ADD001D8438 /* MainPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterInput.swift; sourceTree = "<group>"; };
+		73D6B41924E67B15001D8438 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		73D6B41B24E67B37001D8438 /* MainViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInput.swift; sourceTree = "<group>"; };
+		73D6B41E24E67C1B001D8438 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		73D6B42124E685D9001D8438 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		73D6B42324E6860B001D8438 /* PostServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServiceProtocol.swift; sourceTree = "<group>"; };
+		73D6B42524E68672001D8438 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		73D6B42724E69DCA001D8438 /* PostsViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewInput.swift; sourceTree = "<group>"; };
+		73D6B42924E69E40001D8438 /* PostsInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsInteractorInput.swift; sourceTree = "<group>"; };
+		73D6B42B24E69E4F001D8438 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
 		AC8C46EBBC9F4F48E4B3FA0A /* Pods-ShitpostTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShitpostTests.debug.xcconfig"; path = "Target Support Files/Pods-ShitpostTests/Pods-ShitpostTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF809E77A31402EF207694E8 /* Pods-Shitpost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shitpost.release.xcconfig"; path = "Target Support Files/Pods-Shitpost/Pods-Shitpost.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,9 +280,36 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		7327262324E6A35600AB945E /* User Service */ = {
+			isa = PBXGroup;
+			children = (
+				7327262424E6A36A00AB945E /* UserServiceProtocol.swift */,
+				7327262624E6A38B00AB945E /* UserService.swift */,
+			);
+			path = "User Service";
+			sourceTree = "<group>";
+		};
+		7327262A24E6A6FA00AB945E /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				7327262B24E6A70700AB945E /* PostsAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		7327262D24E6AC1A00AB945E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7327262E24E6AC3500AB945E /* SignUpRouterInput.swift */,
+				7327263024E6AD0B00AB945E /* SignUpRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		73B572B424E1310C004A69D3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				73D6B40324E5289D001D8438 /* Constants */,
 				73D096AC24E2C2E100C0CBEA /* Identifiers */,
 				73D0969724E294F300C0CBEA /* Font */,
 				73CC2B5424E1493A005009F0 /* InputStyle */,
@@ -278,6 +359,8 @@
 		73C671BD24E12AC800ACD1BF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				73D6B3FA24E5274D001D8438 /* Posts */,
+				73D6B3F424E40EF6001D8438 /* Main */,
 				73D0969A24E29B4400C0CBEA /* SignUp */,
 				73C671BE24E12AD700ACD1BF /* Auth */,
 			);
@@ -361,6 +444,7 @@
 		73D0969A24E29B4400C0CBEA /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				7327262D24E6AC1A00AB945E /* Router */,
 				73D6B3E924E2E3BE001D8438 /* Assembly */,
 				73D096B124E2C6F700C0CBEA /* ViewModel */,
 				73D096A624E2AC3C00C0CBEA /* Presenter */,
@@ -373,6 +457,8 @@
 		73D0969B24E29B5000C0CBEA /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				7327262324E6A35600AB945E /* User Service */,
+				73D6B42024E685C1001D8438 /* Post Service */,
 				73D6B3DA24E2CA9B001D8438 /* Validation */,
 				73D0969C24E29B5A00C0CBEA /* Auth */,
 			);
@@ -392,6 +478,7 @@
 			isa = PBXGroup;
 			children = (
 				73D096A024E29B9600C0CBEA /* User.swift */,
+				73D6B42124E685D9001D8438 /* Post.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -444,7 +531,6 @@
 			isa = PBXGroup;
 			children = (
 				73D096B224E2C70900C0CBEA /* SignUpRequest.swift */,
-				73D096B424E2C74600C0CBEA /* ValidationResponse.swift */,
 				73D6B3E324E2DFE5001D8438 /* SignUpResponse.swift */,
 			);
 			path = ViewModel;
@@ -453,6 +539,7 @@
 		73D6B3DA24E2CA9B001D8438 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
+				73D096B424E2C74600C0CBEA /* ValidationResponse.swift */,
 				73D6B3DF24E2D8AF001D8438 /* ValidationErrorImpl.swift */,
 				73D6B3DB24E2CABB001D8438 /* ValidationServiceProtocol.swift */,
 				73D6B3DD24E2CB64001D8438 /* ValidationService.swift */,
@@ -483,6 +570,144 @@
 				73D6B3EE24E40AAF001D8438 /* Router.swift */,
 			);
 			path = Routing;
+			sourceTree = "<group>";
+		};
+		73D6B3F424E40EF6001D8438 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				73D6B41D24E67C10001D8438 /* Assembly */,
+				73D6B41624E67ACF001D8438 /* Presenter */,
+				73D6B41124E67A58001D8438 /* Interactor */,
+				73D6B40C24E679E3001D8438 /* Router */,
+				73D6B3F524E40FAE001D8438 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		73D6B3F524E40FAE001D8438 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				73D6B3F624E40FBA001D8438 /* MainViewController.swift */,
+				73D6B41B24E67B37001D8438 /* MainViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73D6B3FA24E5274D001D8438 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				7327262A24E6A6FA00AB945E /* Assembly */,
+				73D6B40624E52F04001D8438 /* ViewModels */,
+				73D6B3FD24E5276D001D8438 /* Presenter */,
+				73D6B3FC24E52764001D8438 /* Interactor */,
+				73D6B3FB24E52759001D8438 /* View */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		73D6B3FB24E52759001D8438 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				73D6B40924E53151001D8438 /* PostCell */,
+				73D6B40024E527B0001D8438 /* Input Cell */,
+				73D6B3FE24E5277E001D8438 /* PostsViewController.swift */,
+				73D6B42724E69DCA001D8438 /* PostsViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73D6B3FC24E52764001D8438 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				73D6B42924E69E40001D8438 /* PostsInteractorInput.swift */,
+				7327262124E6A10400AB945E /* PostsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		73D6B3FD24E5276D001D8438 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7327261F24E6A0D100AB945E /* PostsPresenterInput.swift */,
+				7327262824E6A55600AB945E /* PostsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		73D6B40024E527B0001D8438 /* Input Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Input Cell";
+			sourceTree = "<group>";
+		};
+		73D6B40324E5289D001D8438 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				73D6B40424E528AC001D8438 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		73D6B40624E52F04001D8438 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				73D6B40724E52F13001D8438 /* PostViewModel.swift */,
+				73D6B42B24E69E4F001D8438 /* PostRequest.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		73D6B40924E53151001D8438 /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				73D6B40A24E53183001D8438 /* PostCell.swift */,
+			);
+			path = PostCell;
+			sourceTree = "<group>";
+		};
+		73D6B40C24E679E3001D8438 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				73D6B40D24E679F9001D8438 /* MainRouterInput.swift */,
+				73D6B40F24E67A1E001D8438 /* MainRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		73D6B41124E67A58001D8438 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				73D6B41224E67A6C001D8438 /* MainInteractorInput.swift */,
+				73D6B41424E67A84001D8438 /* MainInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		73D6B41624E67ACF001D8438 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				73D6B41724E67ADD001D8438 /* MainPresenterInput.swift */,
+				73D6B41924E67B15001D8438 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		73D6B41D24E67C10001D8438 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				73D6B41E24E67C1B001D8438 /* MainAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		73D6B42024E685C1001D8438 /* Post Service */ = {
+			isa = PBXGroup;
+			children = (
+				73D6B42324E6860B001D8438 /* PostServiceProtocol.swift */,
+				73D6B42524E68672001D8438 /* PostService.swift */,
+			);
+			path = "Post Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -654,6 +879,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7327262924E6A55600AB945E /* PostsPresenter.swift in Sources */,
+				73D6B3FF24E5277E001D8438 /* PostsViewController.swift in Sources */,
 				73D096B924E2C7F900C0CBEA /* SignUpInteractor.swift in Sources */,
 				7309AEDB24E1501700E2BF3A /* KeyboardObservingControllerProtocol.swift in Sources */,
 				73D6B3E424E2DFE5001D8438 /* SignUpResponse.swift in Sources */,
@@ -662,37 +889,62 @@
 				73D6B3DE24E2CB64001D8438 /* ValidationService.swift in Sources */,
 				73D6B3EF24E40AAF001D8438 /* Router.swift in Sources */,
 				73D0969E24E29B7300C0CBEA /* AuthServiceProtocol.swift in Sources */,
+				7327262224E6A10400AB945E /* PostsInteractor.swift in Sources */,
+				7327262024E6A0D100AB945E /* PostsPresenterInput.swift in Sources */,
 				73D096B524E2C74600C0CBEA /* ValidationResponse.swift in Sources */,
 				7301A61724E11947002E9D64 /* AuthViewController.swift in Sources */,
 				7309AEE124E16D9000E2BF3A /* LoginRequest.swift in Sources */,
 				73D6B3E224E2DF98001D8438 /* SignUpPresenterInput.swift in Sources */,
 				73D096A324E29C2700C0CBEA /* AuthService.swift in Sources */,
+				73D6B40824E52F13001D8438 /* PostViewModel.swift in Sources */,
 				73D096B324E2C70900C0CBEA /* SignUpRequest.swift in Sources */,
 				73D6B3DC24E2CABB001D8438 /* ValidationServiceProtocol.swift in Sources */,
+				73D6B42A24E69E40001D8438 /* PostsInteractorInput.swift in Sources */,
 				73D0969624E2912400C0CBEA /* AuthAssembly.swift in Sources */,
 				73D6B3F124E40B79001D8438 /* AuthRouterInput.swift in Sources */,
+				73D6B41A24E67B15001D8438 /* MainPresenter.swift in Sources */,
+				7327263124E6AD0B00AB945E /* SignUpRouter.swift in Sources */,
+				7327262C24E6A70700AB945E /* PostsAssembly.swift in Sources */,
+				73D6B3F724E40FBA001D8438 /* MainViewController.swift in Sources */,
+				73D6B40E24E679F9001D8438 /* MainRouterInput.swift in Sources */,
+				73D6B40B24E53183001D8438 /* PostCell.swift in Sources */,
+				73D6B41024E67A1E001D8438 /* MainRouter.swift in Sources */,
 				7309AEDF24E16D8300E2BF3A /* AuthInteractorInput.swift in Sources */,
+				73D6B41824E67ADD001D8438 /* MainPresenterInput.swift in Sources */,
+				73D6B42824E69DCA001D8438 /* PostsViewInput.swift in Sources */,
 				73D096B724E2C7BD00C0CBEA /* SignUpInteractorInput.swift in Sources */,
 				73D096A124E29B9600C0CBEA /* User.swift in Sources */,
+				73D6B40524E528AC001D8438 /* Constants.swift in Sources */,
 				73D6B3E624E2E067001D8438 /* SignUpPresenter.swift in Sources */,
 				73D096AE24E2C2F900C0CBEA /* Identifiers.swift in Sources */,
 				73D6B3F324E40BA9001D8438 /* AuthRouter.swift in Sources */,
 				7309AEE324E16DD500E2BF3A /* AuthInteractor.swift in Sources */,
 				7301A61324E11947002E9D64 /* AppDelegate.swift in Sources */,
 				73B572BC24E13DAA004A69D3 /* Images.swift in Sources */,
+				73D6B41524E67A84001D8438 /* MainInteractor.swift in Sources */,
 				7309AEE924E1701500E2BF3A /* UserViewModel.swift in Sources */,
 				73D096A924E2AC8200C0CBEA /* AuthFormView.swift in Sources */,
 				73D6B3E824E2E080001D8438 /* SignUpViewInput.swift in Sources */,
+				73D6B41324E67A6C001D8438 /* MainInteractorInput.swift in Sources */,
 				73B572C724E14321004A69D3 /* UIViewController+Extension.swift in Sources */,
 				73D6B3E024E2D8AF001D8438 /* ValidationErrorImpl.swift in Sources */,
+				73D6B42424E6860B001D8438 /* PostServiceProtocol.swift in Sources */,
+				7327262F24E6AC3500AB945E /* SignUpRouterInput.swift in Sources */,
 				73D096AB24E2AE5A00C0CBEA /* AuthFormViewDelegate.swift in Sources */,
 				7309AEDD24E16D1C00E2BF3A /* AuthViewInput.swift in Sources */,
 				7309AEE524E16F9B00E2BF3A /* AuthPresenterInput.swift in Sources */,
 				73B572B924E131C2004A69D3 /* Texts.swift in Sources */,
+				73D6B41C24E67B37001D8438 /* MainViewInput.swift in Sources */,
+				73D6B42C24E69E4F001D8438 /* PostRequest.swift in Sources */,
 				7301A61524E11947002E9D64 /* SceneDelegate.swift in Sources */,
 				73D096B024E2C3DF00C0CBEA /* SignUpViewController.swift in Sources */,
 				73D0969924E294FD00C0CBEA /* Fonts.swift in Sources */,
+				7327262724E6A38B00AB945E /* UserService.swift in Sources */,
+				7327262524E6A36A00AB945E /* UserServiceProtocol.swift in Sources */,
+				73D6B42624E68672001D8438 /* PostService.swift in Sources */,
 				73D6B3EB24E2E3CE001D8438 /* SignUpAssembly.swift in Sources */,
+				73D6B42224E685D9001D8438 /* Post.swift in Sources */,
+				73D6B41F24E67C1B001D8438 /* MainAssembly.swift in Sources */,
 				7309AEE724E1700200E2BF3A /* LoginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

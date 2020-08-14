@@ -19,6 +19,24 @@ class ValidationService: ValidationServiceProtocol {
         return validateCredentials(email: loginRequest.email, password: loginRequest.password)
     }
     
+    func validate(postRequest: PostRequest) -> ValidationResponse {
+        
+        let validationRule = ValidationRuleLength(min: Constants.Post.minCharacterCount, max: Constants.Post.maxCharacterCount, lengthType: .characters, error: ValidationErrorImpl(message: Text.Validation.incorrectPost))
+        
+        let validationResult = postRequest.content?.validate(rule: validationRule)
+        
+        guard let result = validationResult else {
+            return ValidationResponse(isSuccessful: false, malformedFields: [Identifier.Post.postInput: Text.Validation.incorrectPost])
+        }
+        
+        if !result.isValid {
+            return ValidationResponse(isSuccessful: false, malformedFields: [Identifier.Post.postInput: Text.Validation.incorrectPost])
+        }
+        else {
+            return ValidationResponse(isSuccessful: true, malformedFields: nil)
+        }
+    }
+    
     fileprivate func validateCredentials(email: String?, password: String?) -> ValidationResponse {
         
         let emailRule = ValidationRulePattern(pattern: EmailValidationPattern.standard, error: ValidationErrorImpl(message: Text.Validation.emailIsBadlyFormatted))

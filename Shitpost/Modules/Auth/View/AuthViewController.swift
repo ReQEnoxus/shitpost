@@ -25,6 +25,8 @@ class AuthViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         
+        interactor.checkAuth()
+        
         let config = FormViewConfiguration(logoImageName: Image.Auth.penguin,
                                            submitButtonTitle: Text.Auth.loginButtonTitle,
                                            secondaryButtonTitle: Text.Auth.signUpButtonTitle,
@@ -96,7 +98,11 @@ extension AuthViewController: AuthViewInput {
     }
     
     func loginFinishedWithSuccess() {
-        router.pushMainModule()
+        router.pushMainModule(animated: true)
+    }
+    
+    func skipToMainModule() {
+        router.pushMainModule(animated: false)
     }
 }
 

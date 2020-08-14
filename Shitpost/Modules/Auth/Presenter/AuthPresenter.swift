@@ -14,7 +14,7 @@ class AuthPresenter: AuthPresenterInput {
     
     func loginFinished(with response: LoginResponse) {
         if response.success {
-            print("ok")
+            view.loginFinishedWithSuccess()
         }
         else if let serverError = response.error {
             view.showInvalidCredentialsError(serverError)
@@ -24,6 +24,9 @@ class AuthPresenter: AuthPresenterInput {
                 view.showMalformedFieldError(field: field, error: error)
             }
         }
-            
+    }
+    
+    func loginIsNotRequired() {
+        view.skipToMainModule()
     }
 }

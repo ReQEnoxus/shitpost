@@ -20,7 +20,7 @@ class AuthInteractor: AuthInteractorInput {
         let validationResponse = validationService.validate(loginRequest: request)
         
         if validationResponse.isSuccessful, let email = request.email, let password = request.password {
-            authService.signUp(email: email, password: password) { [weak self] result in
+            authService.signIn(email: email, password: password) { [weak self] result in
                 switch result {
                 case .failure(let error):
                     self?.presenter.loginFinished(with: LoginResponse(success: false, error: error.localizedDescription, malformedFields: nil))
@@ -31,6 +31,14 @@ class AuthInteractor: AuthInteractorInput {
         }
         else {
             presenter.loginFinished(with: LoginResponse(success: false, error: nil, malformedFields: validationResponse.malformedFields))
+        }
+    }
+    
+    func checkAuth() {
+        let authenticated = UserDefaults.standard.bool(forKey: Constants.UserDefaults.Keys.isAuthenticated)
+        
+        if authenticated {
+            presenter.loginIsNotRequired()
         }
     }
 }

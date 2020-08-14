@@ -14,10 +14,12 @@ class AuthRouter: Router, AuthRouterInput {
     weak var base: UIViewController!
     
     func presentSignUpController() {
-        present(SignUpAssembly.configure())
+        present(SignUpAssembly.configure(), animated: true)
     }
     
-    func pushMainModule() {
-        
+    func pushMainModule(animated: Bool) {
+        push(MainAssembly.configure(), animated: animated)
     }
+    
+    
 }

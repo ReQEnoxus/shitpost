@@ -11,4 +11,5 @@ import Foundation
 protocol AuthInteractorInput: AnyObject {
     
     func login(with request: LoginRequest)
+    func checkAuth()
 }

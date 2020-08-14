@@ -15,4 +15,6 @@ protocol AuthViewInput: AnyObject {
     func showInvalidCredentialsError(_ error: String)
     
     func loginFinishedWithSuccess()
+    
+    func skipToMainModule()
 }

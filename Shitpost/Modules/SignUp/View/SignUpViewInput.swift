@@ -13,4 +13,6 @@ protocol SignUpViewInput: AnyObject {
     func showMalformedFieldError(field: String, error: String)
     
     func showInvalidCredentialsError(_ error: String)
+    
+    func signUpFinishedWithSuccess()
 }

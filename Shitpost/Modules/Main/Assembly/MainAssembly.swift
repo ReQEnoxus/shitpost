@@ -1,31 +1,28 @@
 //
-//  SignUpAssembly.swift
+//  MainAssembly.swift
 //  Shitpost
 //
-//  Created by Enoxus on 11.08.2020.
+//  Created by Enoxus on 14.08.2020.
 //  Copyright © 2020 Enoxus. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class SignUpAssembly {
+class MainAssembly {
     
     class func configure() -> UIViewController {
         
-        let view = SignUpViewController()
-        let interactor = SignUpInteractor()
-        let presenter = SignUpPresenter()
-        let router = SignUpRouter()
-        
-        let validationService = ValidationService()
+        let view = MainViewController()
+        let interactor = MainInteractor()
+        let presenter = MainPresenter()
+        let router = MainRouter()
         let authService = AuthService()
         
         view.interactor = interactor
         view.router = router
         router.base = view
         interactor.authService = authService
-        interactor.validationService = validationService
         interactor.presenter = presenter
         presenter.view = view
         

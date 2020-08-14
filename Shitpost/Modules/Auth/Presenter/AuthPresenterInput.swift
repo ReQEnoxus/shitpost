@@ -11,4 +11,5 @@ import Foundation
 protocol AuthPresenterInput: AnyObject {
     
     func loginFinished(with response: LoginResponse)
+    func loginIsNotRequired()
 }

@@ -12,5 +12,5 @@ protocol AuthRouterInput: AnyObject {
     
     func presentSignUpController()
     
-    func pushMainModule()
+    func pushMainModule(animated: Bool)
 }

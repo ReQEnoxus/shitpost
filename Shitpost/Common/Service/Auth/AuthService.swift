@@ -26,6 +26,8 @@ class AuthService: AuthServiceProtocol {
     func signOut(completion: (Error?) -> Void) {
         do {
             try Auth.auth().signOut()
+            UserDefaults.standard.set(false, forKey: Constants.UserDefaults.Keys.isAuthenticated)
+            completion(nil)
         }
         catch let error {
             completion(error)
@@ -44,6 +46,8 @@ class AuthService: AuthServiceProtocol {
             let resultUser = result.user
             guard let userEmail = resultUser.email else { return }
             let user = User(email: userEmail)
+            
+            UserDefaults.standard.set(true, forKey: Constants.UserDefaults.Keys.isAuthenticated)
             
             DispatchQueue.main.async {
                 completion(.success(user))

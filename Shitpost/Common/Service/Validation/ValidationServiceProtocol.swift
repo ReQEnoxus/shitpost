@@ -13,4 +13,6 @@ protocol ValidationServiceProtocol: AnyObject {
     func validate(signUpRequest: SignUpRequest) -> ValidationResponse
     
     func validate(loginRequest: LoginRequest) -> ValidationResponse
+    
+    func validate(postRequest: PostRequest) -> ValidationResponse
 }

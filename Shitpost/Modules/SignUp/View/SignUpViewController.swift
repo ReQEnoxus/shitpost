@@ -16,6 +16,7 @@ class SignUpViewController: UIViewController {
     
     var mainView: AuthFormView!
     var interactor: SignUpInteractorInput!
+    var router: SignUpRouterInput!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +74,10 @@ extension SignUpViewController: SignUpViewInput {
     func showInvalidCredentialsError(_ error: String) {
         mainView.errorLabel.text = error
         mainView.toggleErrorLabel(true)
+    }
+    
+    func signUpFinishedWithSuccess() {
+        router.navigateToMainModule()
     }
 }
 

@@ -26,5 +26,15 @@ internal enum Text {
         static let emailCannotBeEmpty = "Email cannot be empty"
         static let passwordCannotBeEmpty = "Password cannot be empty"
         static let incorrectCredentials = "Incorrect email or password"
+        static let incorrectPost = "Post should be from 1 to 280 symbols"
+    }
+    internal enum Post {
+        static let postTextFieldPlaceholder = "Enter your post"
+        static let postButtonTitle = "Send"
+        static let exitButtonTitle = "Exit"
+        static let viewControllerName = "Posts"
+    }
+    internal enum User {
+        static let viewControllerName = "User"
     }
 }

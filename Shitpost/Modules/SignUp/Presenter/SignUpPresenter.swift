@@ -14,7 +14,7 @@ class SignUpPresenter: SignUpPresenterInput {
     
     func signUpFinished(with response: SignUpResponse) {
         if response.success {
-            print("OK")
+            view.signUpFinishedWithSuccess()
         }
         else if let serverError = response.error {
             view.showInvalidCredentialsError(serverError)

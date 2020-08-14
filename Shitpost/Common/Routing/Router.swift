@@ -13,30 +13,30 @@ protocol Router: AnyObject {
     
     var base: UIViewController! { get }
     
-    func push(_ viewController: UIViewController)
+    func push(_ viewController: UIViewController, animated: Bool)
     
-    func present(_ viewController: UIViewController)
+    func present(_ viewController: UIViewController, animated: Bool)
     
-    func dismiss()
+    func dismiss(animated: Bool)
     
-    func pop()
+    func pop(animated: Bool)
 }
 
 extension Router {
     
-    func push(_ viewController: UIViewController) {
-        base.navigationController?.pushViewController(viewController, animated: true)
+    func push(_ viewController: UIViewController, animated: Bool) {
+        base.navigationController?.pushViewController(viewController, animated: animated)
     }
     
-    func present(_ viewController: UIViewController) {
-        base.present(viewController, animated: true)
+    func present(_ viewController: UIViewController, animated: Bool) {
+        base.present(viewController, animated: animated)
     }
     
-    func dismiss() {
-        base.dismiss(animated: true, completion: nil)
+    func dismiss(animated: Bool) {
+        base.dismiss(animated: animated, completion: nil)
     }
     
-    func pop() {
-        base.navigationController?.popViewController(animated: true)
+    func pop(animated: Bool) {
+        base.navigationController?.popViewController(animated: animated)
     }
 }
